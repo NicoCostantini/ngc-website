@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('img/background.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.pattern-overlay {
+    background: url('img/background.png') repeat; 
+    opacity: 0.2; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.box {
+    width: 500px;
+    background: rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box-img {
+    border-radius: 50%;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+box p {
+    border-radius: 50%;
+}
+
+.box ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a{
+    color: white;
+    font-size: 45px;
+    padding: 10px 5px;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+.box ul li a:hover {
+    color: #b9b9b9;
+    transform: scale(1.1);
+}
+
+audio {
+  width: 250px;
+  height: 20px;
+  font-size: 5px;
+}
+
+audio::-webkit-controls {
+  display: none;
+}
+
+audio::-webkit-slider-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
+
+audio::-webkit-slider-runnable-track {
+  width: 50%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+audio::-webkit-slider-thumb:hover {
+  background-color: #fff;
+}
